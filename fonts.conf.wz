@@ -4,8 +4,6 @@ if 'emoji' in roles:
     for role in roles:
         if role != 'emoji':
             roles[role] += roles['emoji']
-if 'monospace' in roles and 'ui-monospace' not in roles:
-    roles['ui-monospace'] = roles['monospace']
 )\
 <?xml version='1.0'?>
 <!DOCTYPE fontconfig SYSTEM 'fonts.dtd'>
@@ -15,7 +13,6 @@ if 'monospace' in roles and 'ui-monospace' not in roles:
     <dir>/usr/share/fonts</dir>
 
     <match target="font">
-
         @for feature in features:
         <edit name="fontfeatures" mode="append"><string>@feature on</string></edit>
         @end
@@ -35,5 +32,10 @@ if 'monospace' in roles and 'ui-monospace' not in roles:
         @end
     </match>
     @end
+
+    <match target="pattern">
+      <test qual="any" name="family"><string>ui-monospace</string></test>
+      <edit name="family" mode="assign" binding="same"><string>monospace</string></edit>
+    </match>
 
 </fontconfig>
