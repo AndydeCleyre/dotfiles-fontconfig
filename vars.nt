@@ -8,6 +8,11 @@ features:
   - FRAC
   - THND
   - TXTR
+aliases:
+  # tip: delete /etc/fonts/conf.d/45-latin.conf
+  ui-monospace: monospace
+  Liberation Mono: monospace
+  Lato: sans-serif
 roles:
   emoji:
     - Symbols Nerd Font Mono

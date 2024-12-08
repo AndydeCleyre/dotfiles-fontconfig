@@ -1,4 +1,4 @@
-@require(roles, options, features)
+@require(roles, options, features, aliases)
 @(
 if 'emoji' in roles:
     for role in roles:
@@ -22,11 +22,13 @@ if 'emoji' in roles:
         <edit mode="assign" name="@key"><@otype>@val</@otype></edit>
         @end
     </match>
+    @for lookup, reply in aliases.items():
 
     <match target="pattern">
-      <test qual="any" name="family"><string>ui-monospace</string></test>
-      <edit name="family" mode="assign" binding="same"><string>monospace</string></edit>
+      <test qual="any" name="family"><string>@lookup</string></test>
+      <edit name="family" mode="assign" binding="same"><string>@reply</string></edit>
     </match>
+    @end
     @for role, prefs in roles.items():
 
     <match target="pattern">
