@@ -22,6 +22,11 @@ if 'emoji' in roles:
         <edit mode="assign" name="@key"><@otype>@val</@otype></edit>
         @end
     </match>
+
+    <match target="pattern">
+      <test qual="any" name="family"><string>ui-monospace</string></test>
+      <edit name="family" mode="assign" binding="same"><string>monospace</string></edit>
+    </match>
     @for role, prefs in roles.items():
 
     <match target="pattern">
@@ -32,10 +37,5 @@ if 'emoji' in roles:
         @end
     </match>
     @end
-
-    <match target="pattern">
-      <test qual="any" name="family"><string>ui-monospace</string></test>
-      <edit name="family" mode="assign" binding="same"><string>monospace</string></edit>
-    </match>
 
 </fontconfig>
