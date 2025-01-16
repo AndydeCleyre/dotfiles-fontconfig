@@ -18,23 +18,29 @@ roles:
     - Symbols Nerd Font Mono
     - Symbols Nerd Font
     - NanumGothicCoding
+    # https://github.com/tetunori/fluent-emoji-webfont :
+    - Fluent Emoji Color
+    - Fluent Emoji Flat
     - Twemoji
+    - Twitter Color Emoji
     - SerenityOS Emoji
     - OpenMoji Color
     - JoyPixels
   monospace:
+    - Andysevka Term
     - Iosevka Term Custom
     - 0xProto
+    - Maple Mono
     # - Sudo
-    # Sudo shadows some Nerd Font symbols
+    # Sudo currently has bad spacing with nerd font symbols and other weird issues
     - Fantasque Sans Mono
     - Ubuntu Mono
     # The rest have noticeably worse character coverage:
     # - LXGW WenKai Mono TC
     # LXGW has trouble with some symbols maybe, like ellipsis
-    - Maple Mono
     - Share Tech Mono
   sans-serif:
+    - Andysevka QP
     - Iosevka QP Custom
     - Sudo UI
     - Cadman
