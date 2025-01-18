@@ -38,6 +38,7 @@ roles:
     # The rest have noticeably worse character coverage:
     # - LXGW WenKai Mono TC
     # LXGW has trouble with some symbols maybe, like ellipsis
+    - Comic Mono
     - Share Tech Mono
   sans-serif:
     - Andysevka QP
