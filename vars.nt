@@ -40,6 +40,7 @@ roles:
     # LXGW has trouble with some symbols maybe, like ellipsis
     - Comic Mono
     - Share Tech Mono
+    - Atkinson Hyperlegible Mono
   sans-serif:
     - Andysevka QP
     - Iosevka QP Custom
@@ -64,6 +65,8 @@ roles:
     - Capriola
     - Reforma 2018
     # TODO: maybe bump up reforma
+    - Atkinson Hyperlegible Next
+    - Atkinson Hyperlegible
   serif:
     # test words: DEPENDENCIES bikes
     - Typey McTypeface
