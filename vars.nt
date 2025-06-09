@@ -5,7 +5,7 @@ options:
   lcdfilter: lcddefault
   rgba: rgb
 features:
-  # Some fonts don't play well with FRAC (Sudo, Maple Mono)
+  # Some fonts don't play well with FRAC (Maple Mono)
   - FRAC
   - THND
   - TXTR
@@ -24,8 +24,6 @@ roles:
     - JoyPixels
   monospace:
     - Andysevka Term
-    - Andysevka Term Semi-Extended
-    - Andysevka Term Extended
     - 0xProto
 
     # - 0xProto Nerd Font
@@ -45,13 +43,15 @@ roles:
     - Comic Mono
     - Share Tech Mono
     - Atkinson Hyperlegible Mono
+    - Spleen 32x64
   sans-serif:
     - Andysevka QP
-    - Andysevka QP Semi-Extended
-    - Andysevka QP Extended
+    - Kermit
     - Sudo UI
     - Cadman
     - Andika
+    - 0xPropo
+    # where should 0xpropo go?
     - Ubuntu
     - Baloo 2 Medium
     - Barlow Medium
@@ -64,6 +64,8 @@ roles:
 
     # -- The rest have noticeably worse character coverage --
     - Convergence
+    - Winky Sans
+    - Ruluko
     - Blogger Sans
     - Atkinson Hyperlegible
     - PT Sans
