@@ -64,6 +64,7 @@ roles:
 
     # -- The rest have noticeably worse character coverage --
     - Convergence
+    - Iansui
     - Winky Sans
     - Ruluko
     - Blogger Sans
@@ -99,3 +100,4 @@ roles:
     - Alice
     - Brawler
     - Averia Serif
+    - Hanuman
